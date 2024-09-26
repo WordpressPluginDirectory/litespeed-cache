@@ -3,7 +3,7 @@ Contributors: LiteSpeedTech
 Tags: caching, optimize, performance, pagespeed, seo, image optimize, object cache, redis, memcached, database cleaner
 Requires at least: 4.9
 Tested up to: 6.6.1
-Stable tag: 6.5.0.2
+Stable tag: 6.5.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 
@@ -253,6 +253,11 @@ The vast majority of plugins and themes are compatible with LiteSpeed Cache. The
 You can report security bugs through the Patchstack Vulnerability Disclosure Program. The Patchstack team help validate, triage and handle any security vulnerabilities. [Report a security vulnerability.](https://patchstack.com/database/vdp/litespeed-cache)
 
 == Changelog ==
+
+= 6.5.1 - Sep 25 2024 =
+* **Media** Sanitized dimensions for the images when replacing with placeholders. (TaiYou)
+* **Page Optimize** Sanitized vary value in queue list. (TaiYou)
+* **Cloud** Silent API error when failing to retrieve news updates.
 
 = 6.5.0.2 - Sep 6 2024 =
 * **Debug** Compatibility improvement for WP installations w/o `AUTH_KEY` defined in `wp-config.php`.
