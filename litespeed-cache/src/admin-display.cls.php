@@ -357,7 +357,7 @@ class Admin_Display extends Base {
 			'LiteSpeed Cache',
 			'LiteSpeed Cache',
 			$capability,
-			'litespeed',
+			'litespeed'
 		);
 
 		foreach ( $this->_pages as $slug => $meta ) {
@@ -401,6 +401,7 @@ class Admin_Display extends Base {
 	 */
 	public function enqueue_style() {
 		wp_enqueue_style( Core::PLUGIN_NAME, LSWCP_PLUGIN_URL . 'assets/css/litespeed.css', array(), Core::VER, 'all' );
+        wp_enqueue_style( Core::PLUGIN_NAME . '-dark-mode', LSWCP_PLUGIN_URL . 'assets/css/litespeed-dark-mode.css', array(), Core::VER, 'all' );
 	}
 
 	/**
